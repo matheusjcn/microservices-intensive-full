@@ -10,7 +10,7 @@ const dataConn = {
   vhost: process.env.RABBITMQ_DEFAULT_VHOST || '/',
 }
 
-const saveOrder = (order, channel) => {
+const saveOrder = (order) => {
   
   const redisClient = connectDB();
   
@@ -47,7 +47,7 @@ export function startConsumeCheckout(channel, queueName, exchangeName) {
       console.log(`-*-*-*-*-*-*-[receive-message]-*-*-*-*-*-*-`)
       console.log(`${msg.content.toString()}\n`)
 
-      saveOrder(parseMessage, channel);
+      saveOrder(parseMessage);
       notifyOrderCreated(channel, parseMessage, exchangeName, ``)
 
     }, { noAck: true });
@@ -78,7 +78,7 @@ export function startConsumePayment(channel, queueName) {
 
 function notifyOrderCreated(channel, payload, exchange, routingKey) {
    
-  var msg = process.argv.slice(2).join(' ') || JSON.stringify(payload);
+  var msg =  JSON.stringify(payload);
 
   channel.assertExchange(exchange, 'direct', { durable: true });
   channel.publish(exchange, routingKey, Buffer.from(msg));

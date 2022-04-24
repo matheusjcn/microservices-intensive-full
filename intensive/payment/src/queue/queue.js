@@ -39,6 +39,9 @@ export function startConsume(channel, queueName) {
     console.log(`[Payment][Consuming] -> Queue [ ${queueName} ] - \n`);
     
     channel.consume(queueName,  (msg) => {
+
+      console.log(`\n\n\n`);
+      console.log(msg.content.toString())
       
       const parseMessage = JSON.parse(msg.content.toString());
       console.log(`-*-*-*-*-*-*-[receive-message]-*-*-*-*-*-*-`)
