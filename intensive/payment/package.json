@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "amqplib": "^0.8.0",
+    "esm": "^3.2.25"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "name": "payment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon -r esm src/server.js" 
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

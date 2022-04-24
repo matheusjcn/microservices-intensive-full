@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+  <title>Catalog</title>
+</head>
+<body>
+  <h1>CATALOGS</h1>
+  <ul>
+    <% for(var i=0; i<products.length; i++) {%>
+      <li> id: <%= products[i].uuid %>      </li>
+      <li> Name: <%= products[i].product %> </li>
+      <li> Price: <%= products[i].price %>  </li>
+      <p>___________________________________________</p>    
+    <% } %>
+</ul>
+
+</body>
+</html>

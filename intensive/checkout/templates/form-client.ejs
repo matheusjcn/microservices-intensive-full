@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+  <title>Catalog</title>
+</head>
+<body>
+  <h1>- FINALIZAR COMPRA -</h2>
+  <hr>
+  <h2>Produto : <%= productForm.product %></h3>
+  <h4>Price : <%= productForm.price %><h4> <hr> <br> 
+
+  <form action="/checkout" method="post">
+    CLIENT NAME: <input type="text" name="username"  /><br><br>
+    CLIENT EMAIL: <input type="text" name="useremail"  /><br><br>
+    CLIENT PHONE: <input type="text" name="userphone"  /><br><br>
+    <input type="hidden" name="uuid" value="<%= productForm.uuid %>" />
+    <br><br>
+    <input type="submit" value="accept"/><br><br><br><hr>
+</form>
+
+</body>
+</html>

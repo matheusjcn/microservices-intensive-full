@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  products:
+    build: .
+    command: npm start
+    ports:
+      - "3333:3333"
+    volume:
+      - .:/node/products
