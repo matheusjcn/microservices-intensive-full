@@ -1,0 +1,51 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: checkout
+spec:
+  selector:
+    matchLabels:
+      app: checkout
+  template:
+    metadata:
+      labels:
+        app: checkout
+    spec:
+      containers:
+      - name: checkout
+        image: matheusjcn/intensive-microservices-checkout
+        ports:
+          - containerPort: 3335
+        env:
+          - name: PRODUCT_URL
+            value: "http://product-service:3333"
+          - name: RABBITMQ_ERLANG_COOKIE
+            value: "SIRARTHURCONANDOYLE"
+          - name: RABBITMQ_DEFAULT_USER
+            value: "rabbitmq"
+          - name: RABBITMQ_DEFAULT_PASS
+            value: "rabbitmq"
+          - name: RABBITMQ_DEFAULT_VHOST
+            value: "/"
+          - name: RABBITMQ_DEFAULT_HOST
+            value: "rabbitmq-service"
+ 
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: checkout-service
+  labels:
+    app: checkout-service
+spec:
+  type: LoadBalancer
+  ports:
+  - protocol: TCP
+    port: 3335
+  selector:
+    app: checkout
+
+
+
+

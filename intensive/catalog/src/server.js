@@ -8,9 +8,13 @@ const port = 3334;
 app.set('view engine', 'ejs');
 app.set('views', './templates');
 
-var productURL = env.PRODUCT_URL || 'http://localhost:3333';
+var productURL = env.PRODUCT_URL // || 'http://localhost:3333';
 
 const loadAsyncList = async () => {
+  console.log(`\n\n`);
+  console.log(`${productURL}/products`)
+  console.log(`\n\n`);
+
   try{
     const { data } = await axios.get(`${productURL}/products`);  
     return data
@@ -29,11 +33,15 @@ const loadAsyncView = async (id) => {
   }
 }
 
+app.get('/', (req, res) => {
+  return res.json('[catalog]- running......  { /catalog , /catalog/:id } ')
+});
+
 
 app.get('/catalog', (req, res) => {
   async function loadList() {
     const response = await loadAsyncList();
-    res.render('list', {products: response})
+    res.render('list', {products: response || [] })
   };
   loadList()
 });
@@ -47,5 +55,5 @@ app.get('/catalog/:id', (req, res) => {
 });
 
 app.listen(port,() => {
-  console.log(`Servidor rodando na porta ${port}`);
+  console.log(`[Catalog] rodando na porta ${port}`);
 });

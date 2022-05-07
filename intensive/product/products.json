@@ -2,147 +2,147 @@
   "products": [
     {
       "uuid": "45688cd6-7a27-4a7b-89c5-a9b604eefe2f",
-      "product": "Lettuce - Treviso",
+      "product": "1984 – George Orwell",
       "price": "0.99"
     },
     {
       "uuid": "9a118e4d-821a-44c7-accc-fa99ac4be01a",
-      "product": "Fenngreek Seed",
+      "product": "Uma Breve História do Tempo – Stephen Hawking",
       "price": "5.22"
     },
     {
       "uuid": "29587bee-7642-43bd-a635-076b18995f39",
-      "product": "Beans - Kidney, Canned",
+      "product": "Uma Comovente Obra de Espantoso Talento – Dave Eggers",
       "price": "4.67"
     },
     {
       "uuid": "a2933e23-5521-4361-90f0-4ffa9b7d1de0",
-      "product": "Almonds Ground Blanched",
+      "product": "Muito Longe de Casa – Ishmael Beah",
       "price": "7.48"
     },
     {
       "uuid": "87c3bde9-5590-4db1-a62e-74b6a649e9d5",
-      "product": "Pasta - Penne Primavera, Single",
+      "product": "Uma Dobra no Tempo – Madeleine L’Engle",
       "price": "7.83"
     },
     {
       "uuid": "0bae82e9-3a85-4f37-8ad4-feba28bac1c4",
-      "product": "Plasticspoonblack",
+      "product": "Alice – Lewis Carroll",
       "price": "5.17"
     },
     {
       "uuid": "ed509145-bf2a-4ec3-80c5-2c3bb73a9fb6",
-      "product": "Sugar - Invert",
+      "product": "As Cinzas de Angela: Memória – Frank McCourt",
       "price": "6.49"
     },
     {
       "uuid": "f1991b8d-61ba-4748-9667-18abdf609c5f",
-      "product": "Squid - Breaded",
+      "product": "Fahrenheit 451 – Ray Bradbury",
       "price": "6.01"
     },
     {
       "uuid": "f5e66310-78b4-42c4-95e2-c0a9c8faa319",
-      "product": "Kellogs All Bran Bars",
+      "product": "Boa Noite, Lua – Margaret Wise Brown",
       "price": "7.27"
     },
     {
       "uuid": "3714c3e3-3e37-4ec5-a62a-9570a1357b9d",
-      "product": "Pasta - Orzo, Dry",
+      "product": "Grandes Esperanças – Charles Dickens",
       "price": "7.21"
     },
     {
       "uuid": "0d99e436-6feb-4b77-845a-8b20d43dbf60",
-      "product": "Sour Puss Raspberry",
+      "product": "Harry Potter e a Pedra Filosofal – J. K. Rowling",
       "price": "2.27"
     },
     {
       "uuid": "d67cca15-5bdf-4c92-8427-9e794d85939a",
-      "product": "Versatainer Nc - 8288",
+      "product": "Homem Invisível – Ralph Ellison",
       "price": "0.83"
     },
     {
       "uuid": "d2490a0f-1253-4176-a40e-803d8bfc9eda",
-      "product": "Table Cloth 120 Round White",
+      "product": "Cozinha Confidencial – Anthony Bourdain",
       "price": "2.39"
     },
     {
       "uuid": "f9807d2e-2ab9-4ed3-9176-574abe87f8ff",
-      "product": "Kellogs Raisan Bran Bars",
+      "product": "O Fio da Vida – Kate Atkinson",
       "price": "3.32"
     },
     {
       "uuid": "8402e2b4-ab65-49ea-8923-be46332c0897",
-      "product": "Chocolate - Liqueur Cups With Foil",
+      "product": "Uma Casa na Campina – Laura Ingalls Wilder",
       "price": "3.04"
     },
     {
       "uuid": "41e19236-e67c-4521-b2f6-e6baf328298d",
-      "product": "Transfer Sheets",
+      "product": "Em Busca de Sentido – Viktor E. Frankl",
       "price": "2.65"
     },
     {
       "uuid": "6fc0e66f-f725-432b-bb9c-a0b2c00de9c0",
-      "product": "Potato - Sweet",
+      "product": "Primavera Silenciosa – Rachel Carson",
       "price": "6.76"
     },
     {
       "uuid": "92fbddcb-77f2-4d56-b33f-562148725bbc",
-      "product": "Sage - Fresh",
+      "product": "Lincoln – Doris Kearns Goodwin",
       "price": "7.99"
     },
     {
       "uuid": "1dd30aa8-382e-445b-bf42-5e312419aef3",
-      "product": "Tea - Darjeeling, Azzura",
+      "product": "As Correções – Jonathan Franzen",
       "price": "7.76"
     },
     {
       "uuid": "a8d9ce18-5bf0-4b1d-970b-60febd21f991",
-      "product": "Wine La Vielle Ferme Cote Du",
+      "product": "A Bússola De Ouro – Philip Pullman",
       "price": "6.78"
     },
     {
       "uuid": "5bde5341-dc9d-4b46-91b0-802d768f8902",
-      "product": "Sobe - Liz Blizz",
+      "product": "Jogos Vorazes – Suzanne Collins",
       "price": "6.09"
     },
     {
       "uuid": "75275d36-8d08-4908-a397-64d679a7b7d7",
-      "product": "Artichoke - Bottom, Canned",
+      "product": "O Ladrão de Raios – Rick Riordan",
       "price": "3.38"
     },
     {
       "uuid": "6617edde-710c-41bc-9083-da4ba953376c",
-      "product": "Chips - Assorted",
+      "product": "O Pequeno Príncipe – Antoine de Saint-Exupéry",
       "price": "6.14"
     },
     {
       "uuid": "4ae4e2ae-01ed-4c36-9ec3-e598ae867573",
-      "product": "Beef - Short Ribs",
+      "product": "O Senhor dos Anéis: A Sociedade do Anel – J. R. R. Tolkien",
       "price": "6.69"
     },
     {
       "uuid": "83a5b1f6-97e1-489f-8705-32c0d7891e7c",
-      "product": "Lemonade - Island Tea, 591 Ml",
+      "product": "O Iluminado – Stephen King",
       "price": "8.87"
     },
     {
       "uuid": "1c4e62be-6d75-4b95-953f-ff0106e4ade3",
-      "product": "Foil - Round Foil",
+      "product": "O Estrangeiro – Albert Camus",
       "price": "8.49"
     },
     {
       "uuid": "17805a71-70a3-4f9c-a224-fc386438925e",
-      "product": "Sauce - Rosee",
+      "product": "The Things They Carried – Tim O’Brien",
       "price": "4.05"
     },
     {
       "uuid": "b1f36df7-2879-4012-befa-7441394fc4f3",
-      "product": "Mints - Striped Red",
+      "product": "O Vento nos Salgueiros – Kenneth Grahame",
       "price": "3.56"
     },
     {
       "uuid": "a244ee50-6d76-4992-b935-5d0d900ad296",
-      "product": "Calypso - Lemonade",
+      "product": "Onde Vivem os Monstros – Maurice Sendak",
       "price": "0.84"
     }
   ]

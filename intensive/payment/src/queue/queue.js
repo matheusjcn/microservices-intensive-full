@@ -1,5 +1,4 @@
 import amqp from 'amqplib';
-// import { connectDB } from '../db/db';
 
 const dataConn = {
   hostname: process.env.RABBITMQ_DEFAULT_HOST ||'localhost',
@@ -8,21 +7,6 @@ const dataConn = {
   password: process.env.RABBITMQ_DEFAULT_PASS ||'rabbitmq',
   vhost: process.env.RABBITMQ_DEFAULT_VHOST || '/',
 }
-
-// const saveOrder = (order, channel) => {
-  
-//   // const redisClient = connectDB();
-  
-//   const save = async () => {
-//     redisClient.connect();
-//     const result = await redisClient.set(order.uuid, JSON.stringify(order));
-    
-//     notifyOrderCreated(channel, order, `order_ex`, ``)
-
-//     console.log(`[SAVE] - result: ${result}`);
-//   }
-//   save();
-// }
 
 
 export const createChannelConn = async () => {
