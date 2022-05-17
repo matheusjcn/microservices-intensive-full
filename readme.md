@@ -1,66 +1,36 @@
-### MICROSSERVIÇOS
+### Assimilando Microsserviços
 ---
-Intensivo prático com microserviços.
-As principais metodologias e estruturas
-dessa tecnologia!!!
-Seguindo as aulas, exemplos e metodologias do canal fullcycle.
-
-```npm init -y```
-
-```npm install express```
-
-```npm i esm```
-
-```npm i -D nodemon```
-
-npm install ejs  
-
-npm install amqplib --save
+Construído acompanhando o intensivo prático com microserviços. Seguindo as aulas, exemplos e metodologias do canal fullcycle.
+Simulando uma simplificação de um sistema de compras.
 
 ---
+#### TECNOLOGIAS
 
-Add this code package.json:
-
-- "start": "nodemon -r esm src/server.js" 
-
-And run:
-
- - ```npm start```
-
----
-## TECNOLOGIAS
-
-- ### Node
-- ### Docker
-
-Stop container e imagens <br />
-
-Contêineres:  docker container rm $(docker container ls -a -q) <br />
-
-Imagens :      docker image rm $(docker image ls -a -q)<br />
-
-docker exec -it -container-name- redis-cli <br />
-
-- ### RabbitMQ
-
+-  Node
+-  Docker
+-  RabbitMQ
+-  Kubernets
 ----
-## Microsserviços
-- ### Produtc
+
+### Serviços
+
+![intensive-microservices-diagram](https://user-images.githubusercontent.com/38968482/168702468-553cba05-b171-4c47-9a55-22fb2effa473.png)
+
+
+- #### Produtc
  Responsável por retornar os dados relacionados aos
 produtos da nossa aplicação;
 
-- ### Catalog
+- #### Catalog
  Busca os dados, no serviço de product, e por meio de um template web os exibe em uma página;
 
-- ### Checkout
+- #### Checkout
  Responsável pela checkout, a preenchimento dos dados do cliente e chamada das conclusões de compra;<br />
  <br />
    criar exchange : checkout_ex; <br /> 
    criar queue : checkout_queue; <br />  [[[ checkout_ex - bind -> checkout_queue ]]]
 
-<br />
-
- - ### Order
+ - #### Order
  Responsável pela checkout, a preenchimento dos dados do cliente e chamada das conclusões de compra.
  Escuta as filas de checkout para geram ordem: ```npm start checkout_queue``` <br />
  Escuta as filas de payment para salvar atualizacao: ```npm start payment_queue``` <br />
@@ -69,7 +39,7 @@ produtos da nossa aplicação;
    criar queue : order_queue; <br />  [[[ order_ex - bind -> order_queue ]]]
 
    
-- ### Payment
+- #### Payment
 Responsável pela aprovao do pagamento;
 <br />
   criar exchange : payment_ex; <br /> 
@@ -78,11 +48,3 @@ Responsável pela aprovao do pagamento;
 
 ---------------------------------------------------------------------------
 ---------------------------------------------------------------------------
-///
-/// NEXT STEPS
-
-Kubernets
-Aula 3 - 1:00:00 
----------------------------------------------------------------------------
----------------------------------------------------------------------------
-
