@@ -1,6 +1,6 @@
 ### Assimilando Microsserviços
 ---
-Construído acompanhando o intensivo prático com microserviços. Seguindo as aulas, exemplos e metodologias do canal fullcycle.
+Desenvolvido, acompanhando o intensivo prático de microserviços. Seguindo as aulas, exemplos e metodologias, do canal fullcycle.
 Simulando uma simplificação de um sistema de compras.
 
 ---
@@ -31,16 +31,16 @@ produtos da nossa aplicação;
    criar queue : checkout_queue; <br />  [[[ checkout_ex - bind -> checkout_queue ]]]
 
  - #### Order
- Responsável pela checkout, a preenchimento dos dados do cliente e chamada das conclusões de compra.
- Escuta as filas de checkout para geram ordem: ```npm start checkout_queue``` <br />
- Escuta as filas de payment para salvar atualizacao: ```npm start payment_queue``` <br />
+ Responsável pela checkout, e preenchimento dos dados do cliente e chamada das conclusões de compra.
+ Escuta as filas de checkout para gerar ordem/pedido: ```npm start checkout_queue``` <br />
+ Escuta as filas de payment para salvar atualização: ```npm start payment_queue``` <br />
   <br />
    criar exchange : order_ex; <br /> 
    criar queue : order_queue; <br />  [[[ order_ex - bind -> order_queue ]]]
 
    
 - #### Payment
-Responsável pela aprovao do pagamento;
+Responsável pela aprovação do pagamento;
 <br />
   criar exchange : payment_ex; <br /> 
   criar queue : payment_queue; <br />  [[[ payment_ex - bind -> payment_queue ]]]
